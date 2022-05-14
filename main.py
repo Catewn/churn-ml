@@ -6,9 +6,6 @@ import time
 st.title('Customer Churn Prediction')
 st.header('Data Visualization')
 
-Data = pd.read_csv(r"C:\Users\User\PycharmProjects\Streamlit\banking_churn.csv")
-print(Data.head())
-
 # from backend import initial_cleaning
 from PIL import Image
 
@@ -16,11 +13,6 @@ from PIL import Image
 import warnings
 
 warnings.filterwarnings('ignore')
-
-
-# load data as pandas dataframe
-Data = pd.read_csv(r"C:\Users\User\PycharmProjects\Streamlit\banking_churn.csv")
-Data = Data.iloc[:, :-2]
 
 st.subheader('Creditscore predictor')
 image = Image.open('hist_creditscore.png')
